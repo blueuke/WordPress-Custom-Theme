@@ -1,0 +1,121 @@
+.h1{
+  font-family: "Basetica", Sans-serif;
+  font-size: 3.75rem; //
+  font-weight:bold;//60px
+}
+.h2{
+  font-family: "Basetica", Sans-serif !important;
+  font-size: 3.125rem !important; //50px
+  font-weight:bold !important;
+}
+.h3{
+  font-family: "Basetica", Sans-serif;
+  font-size: 2.625rem; //42px
+  font-weight:bold;
+}
+.h4,
+.in-h4{
+  font-family: "Basetica", Sans-serif;
+  font-size: 1.75rem; //28px
+  font-weight:bold;
+}
+.h4-lajt{
+  font-family: "Basetica-Light", Sans-serif;
+  font-size: 1.75rem; //28px
+}
+.h5{
+  font-family: "Basetica-Medium", Sans-serif;
+  font-size: 1.375rem; //22px
+}
+.h6{
+  font-family: "Basetica-Medium", Sans-serif;
+  font-size: 1.125rem; //18px
+}
+.par{
+  font-family: "Basetica-Light", Sans-serif;
+  font-size: 1.375rem; //22px
+}
+.par-lajt{
+  font-family: "Basetica-Light", Sans-serif;
+  font-size: 1.125rem; //18px
+}
+.par-mal{
+  font-family: "Basetica-Light", Sans-serif;
+  font-size: 1rem; //16px
+}
+.par-mal-bold{
+  font-family: "Basetica", Sans-serif;
+  font-size: 1rem; //16px
+  font-weight:bold;
+}
+.qkvots{
+  font-family: "Basetica", Sans-serif;
+  font-size: 2.625rem; //42px
+}
+.pqvots{
+  font-family: "Basetica-Light", Sans-serif;
+  font-size: 1.375rem; //22px
+}
+
+
+
+// For mobile
+@media screen and (max-width: 768px){
+  .h1{
+    font-family: "Basetica", Sans-serif;
+    font-size: 2rem;
+    font-weight:bold;
+  }
+  .h2{
+    font-family: "Basetica", Sans-serif;
+    font-size: 1.75rem;
+    font-weight:bold;
+  }
+  .h3{
+    font-family: "Basetica", Sans-serif;
+    font-size: 1.75rem;
+    font-weight:bold;
+  } 
+  .h4{
+    font-family: "Basetica", Sans-serif;
+    font-size: 1.375rem;
+    font-weight:bold;
+  }
+  .h4-lajt{
+    font-family: "Basetica-Light", Sans-serif;
+    font-size: 1.375rem;
+  }
+  .h5{
+    font-family: "Basetica-Medium", Sans-serif;
+    font-size: 1.125rem;
+  }
+  .h6{
+    font-family: "Basetica-Medium", Sans-serif;
+    font-size: 1.125rem;
+  }
+  .par{
+    font-family: "Basetica-Light", Sans-serif;
+    font-size: 1.125rem;
+  }
+  .par-lajt{
+    font-family: "Basetica-Light", Sans-serif;
+    font-size: 1rem;
+  }
+  .par-mal{
+    font-family: "Basetica-Light", Sans-serif;
+    font-size: 0.875rem;
+  }
+  .par-mal-bold{
+    font-family: "Basetica", Sans-serif;
+    font-size: 1rem;
+    font-weight:bold;
+  }
+  .qkvots{
+    font-family: "Basetica", Sans-serif;
+    font-size: 1.375rem;
+  }
+  .pqvots{
+    font-family: "Basetica-Light", Sans-serif;
+    font-size: 1.125rem;
+  }
+}
