@@ -1,0 +1,3 @@
+<?php
+
+# Simpliy simplified
