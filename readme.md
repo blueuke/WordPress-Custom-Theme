@@ -1,61 +1,115 @@
-"Simplicity is the ultimate sophistication." Leonardo Da Vinci 
-email - vladimir.dukoski@gmail.com
-git - https://github.com/blueuke
-Vladimir Dukoski
+# Custom WordPress Template
 
-# Intro
-Not your everyday readme file.
+Welcome to the repository for my Custom WordPress Template. This template is designed to showcase my skills in WordPress development, including custom theme creation, responsive design, SEO optimization, and performance enhancements. Below, you'll find details on the features, installation instructions, and usage guidelines.
 
-Style is using "use case methodology" and will build the style seperatly from the pages, global and components. Also it will be specified where its loaded using and set a dynamic code that will lazy load the style. This allows to include skeleton load. 
+**"Simplicity is the ultimate sophistication."** - Leonardo Da Vinci
 
-Theme Setup
-  wp_plugin_edits loads the file from each of its child folders automatically if they are named index.php, if new files are created they need to be linked in the index.php of the plugin folder we are working with.
+## Contact Information
 
-Templates parts theme setup are using "use case methodology". 
+- Email: [vladimir.dukoski@gmail.com](mailto:vladimir.dukoski@gmail.com)
+- GitHub: [blueuke](https://github.com/blueuke)
+- Name: Vladimir Dukoski
 
-What is use case methodology? Its a methodology that i came up with that will serve each WordPress custom theme file to be organized and structured based on each sites needs, there for the name Use Case. 
+## Intro
 
-Function is just connecting everything together
+Not your everyday readme file. This template employs "use case methodology," which separates style from pages, global components, and dynamically loads styles to include skeleton loading. 
 
-# Definitions 
-  Playground is a name of the file where we can test code.
- 
-# Rules
-0. Just follow the looks and feel of the existing code and everything will be flowing. 
-  
-1. Naming Conventions
-   Folders: all in lowercase "_" for space and a short description of the category the files inside belong to. Example: custom_post_types 
-   Files: all in lowercase "-" for space and a short description of the category
+## Theme Setup
 
-2. Creating new folders
-   Use the naming convention and place the folder in a suitable directory.
-   A folder will always exist even if there is only one file in it. 
-   When creating a sub folder and mouving some of the files there. Search for the original path and replace it with the new path. 
+`wp_plugin_edits` loads files from each of its child folders automatically if they are named `index.php`. If new files are created, they need to be linked in the `index.php` of the plugin folder being worked with.
 
-3. File architecture and Explanation
-   #Theme Setup
-    error_handling
-      - Code that is desgined for handling errors and warnings that we get from infomaniak error log 
-    global_functions
-      - All the functions that we are using once or multiple times  
-    shortcodes
-      - All the shorcodes
-    wp_edits
-      - All the code that alters the wp default settings and features, or adds new onse in the dashboard
-    wp_header_footer
-      - Code that is inserted eather in the header or the footer of the site
-    wp_plugin_edits
-      - Code that modifies the plugins, front end or backend. 
-      - Applies only to this folder. The theme automatically imports the new folders content if its placed in a index.php file of the newly created folder.
-    playground.php
-      - This file is used for testing code and ideas, after which the code will be moved to the proper files and folders
+Templates and theme setup are organized using "use case methodology," a system designed to tailor each WordPress custom theme file to the specific needs of a site.
 
-4. Writing Hooks and Filters
-   Always first call the filter or actin hook after that declare the function. Follow the existing examples. 
+## Definitions
 
-5. Writing comments 
-   Make sure to write comments, and always write them '// Text'. Try searching for "// " with the empty space. 
+- **Playground**: A file where we can test code.
 
+## Rules
+
+0. **Consistency**: Follow the existing code style for a cohesive structure.
+1. **Naming Conventions**:
+   - **Folders**: All lowercase with underscores for spaces and a brief category description (e.g., `custom_post_types`).
+   - **Files**: All lowercase with hyphens for spaces and a brief description.
+2. **Creating New Folders**:
+   - Use the naming convention and place the folder in a suitable directory.
+   - A folder should always exist even if it contains only one file.
+   - When creating a subfolder and moving files, search for and update the original path with the new path.
+3. **File Architecture and Explanation**:
+   - **Theme Setup**:
+     - `error_handling`: Code designed for handling errors and warnings from the Infomaniak error log.
+     - `global_functions`: Functions used once or multiple times.
+     - `shortcodes`: All shortcodes.
+     - `wp_edits`: Code that alters WordPress default settings and features, or adds new ones in the dashboard.
+     - `wp_header_footer`: Code inserted in the header or footer of the site.
+     - `wp_plugin_edits`: Code that modifies plugins, both front end and back end. The theme automatically imports the new folder's content if placed in an `index.php` file of the newly created folder.
+     - `playground.php`: File used for testing code and ideas, which are then moved to the proper files and folders.
+4. **Writing Hooks and Filters**:
+   - Always call the filter or action hook first, followed by the function declaration. Follow existing examples.
+5. **Writing Comments**:
+   - Ensure to write comments using `// Text`. Use the search term `// ` with a space to find comments easily.
+
+## Installation
+
+To install and use this custom WordPress template, follow these steps:
+
+1. **Download the Repository**: Clone or download the repository to your local machine.
+    ```sh
+    git clone https://github.com/blueuke/custom-wordpress-template.git
+    ```
+
+2. **Upload to WordPress**: Upload the template files to the `wp-content/themes/` directory of your WordPress installation.
+
+3. **Activate the Theme**: Log in to your WordPress admin dashboard, go to `Appearance > Themes`, and activate the Custom WordPress Template.
+
+4. **Install Required Plugins**: Some features may require additional plugins. You will be prompted to install and activate these plugins upon theme activation.
+
+## Usage
+
+### Customizing the Theme
+
+- **Theme Customizer**: Go to `Appearance > Customize` to make changes to the theme. You can modify the site title, tagline, colors, background image, and more with live preview.
+
+### Adding Content
+
+- **Custom Post Types**: Utilize the custom post types included in this template for a more dynamic content structure.
+- **Widgets**: Go to `Appearance > Widgets` to add or remove custom widgets.
+
+### Optimizing for SEO
+
+- **SEO Settings**: This theme includes built-in SEO settings. Go to `SEO` in the admin dashboard to configure meta tags, sitemaps, and other SEO-related settings.
+
+## Contributing
+
+If you would like to contribute to the development of this template, please follow these guidelines:
+
+1. **Fork the Repository**: Create a fork of this repository to your own GitHub account.
+2. **Create a Branch**: Create a new branch for your feature or bugfix.
+    ```sh
+    git checkout -b feature-name
+    ```
+3. **Commit Your Changes**: Make your changes and commit them with a descriptive message.
+    ```sh
+    git commit -m "Add new feature"
+    ```
+4. **Push to the Branch**: Push your changes to your forked repository.
+    ```sh
+    git push origin feature-name
+    ```
+5. **Create a Pull Request**: Open a pull request to this repository with a detailed description of your changes.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+## Contact
+
+For any questions, suggestions, or issues, please open an issue in this repository or contact me at [vladimir.dukoski@gmail.com](mailto:vladimir.dukoski@gmail.com).
+
+---
+
+Thank you for checking out my custom WordPress template. I hope it demonstrates my capabilities in WordPress development. If you have any feedback, I would love to hear from you.
 
 # Code Documentation
-Here starts the code documentation for the custom theme that will be develped.
+
+Here starts the code documentation for the custom theme that will be developed.
+```
